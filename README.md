@@ -33,7 +33,7 @@ This game is for students or anyone who wants to practice and improve their spel
 - Increasing difficulty in a balanced way
 - Making the UI responsive and easy to use
 
-![SBSimUMLDiagram](https://github.com/9711519-png/SpellingBee/blob/main/images/SBSimUMLDiagram.png)
+![SB-UMLDiagram](https://github.com/9711519-png/SpellingBee/blob/main/images/SB-UMLDiagram.png)
 
 ![SBMockup](https://github.com/9711519-png/SpellingBee/blob/main/images/SBMockup.png)
 
