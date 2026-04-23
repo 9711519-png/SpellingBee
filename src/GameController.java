@@ -16,4 +16,15 @@ public class GameController {
     }
 
     public void startRound() {
-        // get word, speak it, 
+        // get word, speak it, start timer
+    }
+
+    public void receiveInput(String input) {
+        //check answer and update score
+    }
+
+    public void handleTimeout(){
+        //what happens when time runs out
+
+    }
+    
