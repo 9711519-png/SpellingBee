@@ -1,14 +1,30 @@
 public class TTS {
 
+  private String lastWord; // stores last spoken word
+
   public TTS() {
-    // setup TTS engine
+    // nothing needed to set up
   }
 
   public void speak(String word) {
-    //speak word
+    lastWord = word;
+
+    try {
+      // Windows PowerShell text-to-speech command
+      String command =
+        "powershell -Command \"Add-Type -AssemblyName System.Speech; " +
+        "(New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('" + word + "');\"";
+
+      Runtime.getRuntime().exec(command);
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 
   public void repeat() {
-    // repeat ;ast word
+    if (lastWord != null) {
+      speak(lastWord);
+    }
   }
 }
